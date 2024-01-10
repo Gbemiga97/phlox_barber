@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font text-black text-lg
+  }
+  .h1 {
+    @apply text-6xl xl:text-[5.5rem] font-primary font-extrabold xl:leading-[5.5rem] 
+  }
+  .h2{
+    @apply text-4xl md:text-5xl font-primary font-extrabold  xl:leading-[3.75rem]
+  }
+  .preTitle {
+    @apply font-secondary text-primary text-[1.5rem] leading-8 font-normal
+  }
+  a {
+    @apply text-sm font-semibold hover:text-primary cursor-pointer transition-all flex items-center gap-x-4
+  }
+}
+
+
+.links::after
+{
+  content: '';
+  width: 0.2rem;
+  height: 0.2rem;
+  background: white;
+  display: block;
+  border-radius: 100%;
+  justify-self: flex-end;
+}
+
