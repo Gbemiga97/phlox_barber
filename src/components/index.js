@@ -3,7 +3,7 @@ import Socials from "./Socials";
 import BookNow from "./BookNow";
 import ServiceCard from "./ServiceCard";
 import Input from "./Input";
-
+import Map from "./Map";
 
 
 
@@ -13,5 +13,6 @@ export {
     Socials,
     BookNow,
     ServiceCard,
-    Input
+    Input,
+    Map
 }

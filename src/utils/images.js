@@ -16,6 +16,7 @@ import HairDryer from '../img/services/img2.png'
 import Blade from '../img/services/img3.png'
 import CombAndScissors from '../img/services/noun_hairdresser_1530755.svg.svg'
 import BarberChair from '../img/noun_barber-chair_1634553.svg.svg'
+import Time from '../img/access-time-1.svg fill.png'
 
 
 
@@ -37,7 +38,8 @@ const images = {
     HairDryer,
     Blade,
     CombAndScissors,
-    BarberChair
+    BarberChair,
+    Time
 }
 
 

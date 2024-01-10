@@ -2,7 +2,7 @@ import React from 'react'
 
 const Input = ({name, label, icon, placeholder}) => {
   return (
-    <div className='flex flex-col gap-y-6'>
+    <div className='flex flex-col gap-y-2 w-full'>
         <label
         className='font-primary text-xl font-semibold text-black'
         htmlFor={name}>

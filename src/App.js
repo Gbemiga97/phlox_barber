@@ -1,5 +1,5 @@
 import { BookNow } from "./components";
-import { About, Appointment, Header, Hero, PriceList, Services, Testimonial } from "./sections";
+import { About, Appointment, Footer, Header, Hero, Location, PriceList, Services, Subscribe, Testimonial } from "./sections";
 
 
 function App() {
@@ -13,7 +13,9 @@ function App() {
       <Services />
       <PriceList />
       <Appointment />
-      <div className="h-[4000px]" />
+      <Location />
+      <Subscribe />
+      <Footer />
     </div>
   );
 }

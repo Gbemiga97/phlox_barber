@@ -101,11 +101,55 @@ const priceList = [
     },
 ]
 
+const contact = [
+    {
+        icon: images.Clock,
+        title: 'Working Hours',
+        p1: 'Monday-Friday 09:00 - 23:00',
+        p2: 'Sunday 09:00 - 16:00'
+    },
+    {
+        icon: images.Phone,
+        title: 'Phone',
+        p1: '(001)123456789 - 234567891',
+         p2:'info@yourdomain.com',
+    },
+    {
+        icon: images.Location,
+        title: 'Address',
+        p1: '123 Ave, Lorem City, site Country',
+         p2:'The World',
+    },
+]
+
+const SubImg = [
+    {
+        img: images.Img1
+    },
+    {
+        img: images.Img2
+    },
+    {
+        img: images.Img3
+    },
+    {
+        img: images.Img4
+    },
+    {
+        img: images.Img5
+    },
+    {
+        img: images.Img6
+    },
+]
+
 
 const data = {
     links,
     services,
-    priceList
+    priceList,
+    contact,
+    SubImg
 }
 
 export default data
