@@ -15,7 +15,7 @@ const Services = () => {
           variants={fadeIn('right', 0.2)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{once: true, amount: 0.1}}
+          viewport={{once: false, amount: 0.1}}
           className="flex flex-col justify-center items-center xl:items-start xl:justify-start mx-auto text-center 
           max-w-lg xl:max-w-none gap-y-4 mb-8 xl:mb-0 xl:text-start">
             <PreTitle name='Our Services' />

@@ -53,9 +53,11 @@ const Header = () => {
           }
           </div>
           {/* logo */}
-          <div className='w-16 h-22 '>
+          <Link 
+          to="home" smooth={true} spy={true}
+          className='w-16 h-22 '>
             <img src={images.Logo} alt="logo" />
-          </div>
+          </Link>
 
             {/* second links */}
             <div className="hidden md:flex items-center gap-x-4 capitalize">

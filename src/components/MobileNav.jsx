@@ -16,7 +16,7 @@ const MobileNav = ({showNav, setShowNav}) => {
             {
                 data.links.map(({name, path}, i) => (
                     <li key={i}>
-                        <Link to={path} spy={true} smooth={true}
+                        <Link to={path} spy={true} smooth={true} activeClass="mobileActive"
                         className="capitalize text-xl cursor-pointer"
                         onClick={() => setShowNav(false)}
                         >

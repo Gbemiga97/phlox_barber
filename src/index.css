@@ -21,6 +21,9 @@
   .active {
     @apply text-primary
   }
+  .mobileActive {
+    @apply text-secondary font-extrabold
+  }
 }
 
 

@@ -3,11 +3,17 @@ import { Input, PreTitle } from "../components"
 import {HiUser} from 'react-icons/hi2'
 import { images } from "../utils"
 import { FaCalendarAlt } from "react-icons/fa"
-
+import { motion } from "framer-motion"
+import { fadeIn } from "../utils/variants"
 
 const Appointment = () => {
   return (
-    <section id="appointment" className="mt-[50rem]  xl:mt-96">
+    <motion.section
+    variants={fadeIn('up', 0.2)}
+    initial='hidden'
+    whileInView={'show'}
+    viewport={{once: false, amount: 0.2}}
+    id="appointment" className="mt-[50rem]  xl:mt-96">
       <div className="mx-[1rem] xl:mx-auto ">
         {/* title */}
         <div className='flex  flex-col mx-auto w-fit items-center'>
@@ -34,7 +40,7 @@ const Appointment = () => {
         </button>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 
