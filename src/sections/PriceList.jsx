@@ -1,21 +1,34 @@
 import { PreTitle } from "../components"
 import data from "../utils/data"
+import { motion } from "framer-motion"
+import { fadeIn } from "../utils/variants"
+
 
 const PriceList = () => {
   return (
     <section id="prices" className="bg-price bg-cover bg-no-repeat bg-center w-full h-[75vh]  mt-32 pt-24  text-white">
       <div className="container mx-auto">
         {/* text */}
-        <div className="flex justify-center  flex-col max-w-xs mx-auto mb-24 xl:mb-12">
+        <motion.div 
+        variants={fadeIn('down', 0.2)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: false, amount: 0.1}}
+        className="flex justify-center  flex-col max-w-xs mx-auto mb-24 xl:mb-12">
           <PreTitle name='Price List' />
           <h2 className="h2">
           First cut free
           for kids.
           </h2>
-        </div>
+        </motion.div>
       </div>
       {/* price list */}
-      <div className="xl:mx-[6rem] container mx-auto  bg-secondary min-h-fit  grid xl:grid-cols-2 gap-y-12 xl:gap-y-0
+      <motion.div
+      variants={fadeIn('up', 0.2)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{once: false, amount: 0.1}}
+      className="xl:mx-[6rem] container mx-auto  bg-secondary min-h-fit  grid xl:grid-cols-2 gap-y-12 xl:gap-y-0
       xl:gap-x-24 md:px-16 py-24">
         {/* haircuts and shaving */}
         <div className="border-b pb-16 xl:border-none xl:pb-0">
@@ -68,7 +81,7 @@ const PriceList = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

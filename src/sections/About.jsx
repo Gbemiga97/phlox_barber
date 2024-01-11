@@ -1,18 +1,31 @@
 import { PreTitle } from "../components"
 import { images } from "../utils"
+import { motion } from "framer-motion"
+import { fadeIn } from "../utils/variants"
+
 
 const About = () => {
   return (
     <section id="about" className="pt-24 xl:pt-18 relative xl:flex items-center">
         {/* image */}
-        <div className="absolute  right-0 left-0 xl:static xl:flex-1 w-full xl:max-w-xl">
+        <motion.div 
+        variants={fadeIn('right', 0.2)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: false, amount: 0.1}}
+        className="absolute  right-0 left-0 xl:static xl:flex-1 w-full xl:max-w-xl">
             <img src={images.AboutImg} alt="barbing" className="w-full" />
-          </div>
+          </motion.div>
 
       <div className="container mx-auto justify-center items-center flex-1 ">
 
           {/* text */}
-          <div className="pt-[28rem] md:pt-[48rem] lg:pt-[60rem]  xl:pt-0 xl:flex-1 max-w-xl mx-auto">
+          <motion.div
+          variants={fadeIn('left', 0.2)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{once: false, amount: 0.1}}
+          className="pt-[28rem] md:pt-[48rem] lg:pt-[60rem]  xl:pt-0 xl:flex-1 max-w-xl mx-auto">
             <PreTitle name='about us' />
             <h2 className="h2 mt-4 mb-10 max-w-md  ">
             Welcome To Phlox
@@ -32,7 +45,7 @@ const About = () => {
             <div className="mt-6">
                 <img src={images.Signature} alt="signature" />
               </div>
-          </div>
+          </motion.div>
         </div>
     </section>
   )

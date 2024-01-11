@@ -44,7 +44,7 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-x-4 capitalize ">
           {
             data.links.slice(0, 3).map(({name, path}, i) => (
-              <Link to={path} key={i} spy={true} smooth={true}
+              <Link to={path} key={i} spy={true} smooth={true} activeClass="active"
               className="links"
               >
               {name}

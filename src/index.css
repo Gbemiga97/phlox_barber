@@ -18,6 +18,9 @@
   a {
     @apply text-sm font-semibold hover:text-primary cursor-pointer transition-all flex items-center gap-x-4
   }
+  .active {
+    @apply text-primary
+  }
 }
 
 

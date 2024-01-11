@@ -1,10 +1,17 @@
+import { motion } from "framer-motion"
+import { fadeIn } from "../utils/variants"
 
 const ServiceCard = ({service}) => {
 
-    const {img, title, desc} = service
+    const {img, title, desc, delay} = service
 
   return (
-    <div className=" w-18 py-12 px-4  flex flex-col items-center justify-center gap-y-4
+    <motion.div 
+    variants={fadeIn('left', delay)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: true, amount: 0.1}}
+    className=" w-18 py-12 px-4  flex flex-col items-center justify-center gap-y-4
     hover:bg-secondary hover:text-white hover:shadow-2xl transition-all duration-300">
         {/* icon */}
         <div>
@@ -22,7 +29,7 @@ const ServiceCard = ({service}) => {
             <p className="text-[0.85rem] leading-6  font-medium max-w-lg ">
                 {desc}</p>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

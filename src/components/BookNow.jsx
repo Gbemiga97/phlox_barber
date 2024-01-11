@@ -2,19 +2,32 @@ import { Link } from "react-scroll"
 import { PreTitle } from "."
 import { FaCalendarAlt } from 'react-icons/fa'
 import { IoChevronForwardOutline } from "react-icons/io5"
+import { motion } from "framer-motion"
+import { fadeIn } from "../utils/variants"
+
 
 const BookNow = () => {
   return (
     <div className=" md:mx-3 xl:mx-0 flex flex-col xl:flex-row items-center justify-center xl:items-stretch xl:-mt-20 max-w-[1440px] xl:ml-14">
         {/* opening hours */}
-        <div className="text-center py-8 xl:self-end">
+        <motion.div
+        variants={fadeIn('right', 0.2)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: false, amount: 0.1}}
+        className="text-center py-8 xl:self-end">
             <h5 className="font-primary text-xl font-bold text-secondary ">
                 Opening Hour</h5>
             <p className="text-sm mt-2 font-medium">
                 mon to sat - 9:00 am to 6:00 pm</p>
-        </div>
+        </motion.div>
         {/* customer says */}
-        <div className="bg-secondary text-white p-8 flex flex-col ">
+        <motion.div 
+        variants={fadeIn('left', 0.2)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: false, amount: 0.1}}
+        className="bg-secondary text-white p-8 flex flex-col ">
             <PreTitle name='Customer say' />
             <p className="text-3xl xl:text-xl  font-primary my-4">
             "First time visit, had excellent hair cut and beard trim, very happy and will come back again"
@@ -25,9 +38,14 @@ const BookNow = () => {
                 Daniel & Russel
                 </p>
             </div>
-        </div>
+        </motion.div>
         {/* book  */}
-        <div className='flex gap-x-4 bg-primary w-full xl:max-w-xs p-8  justify-center items-center text-white '>
+        <motion.div 
+        variants={fadeIn('left', 0.2)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: false, amount: 0.1}}
+        className='flex gap-x-4 bg-primary w-full xl:max-w-xs p-8  justify-center items-center text-white '>
            <Link to="appointment"
            className="hover:text-secondary transition-all duration-300"
            >
@@ -41,7 +59,7 @@ const BookNow = () => {
                 <IoChevronForwardOutline />
             </div>
            </Link>
-        </div>
+        </motion.div>
     </div>
   )
 }

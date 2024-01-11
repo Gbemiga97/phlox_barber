@@ -1,12 +1,20 @@
 import { PreTitle, Socials } from "../components"
 import { images } from "../utils"
+import { motion } from "framer-motion"
+import { fadeIn } from "../utils/variants"
+
 
 const Hero = () => {
   return (
     <section id="home" className="bg-hero bg-cover bg-no-repeat min-h-[40rem] bg-[center] pt-32 xl:pt-40">
       <div className="container mx-auto">
         {/* text */}
-        <div>
+        <motion.div
+        variants={fadeIn('right', 0.2)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: false, amount: 0.1}}
+        >
         <PreTitle name='Barber Shop' />
         <h1 className="h1 text-white max-w-md xl:max-w-xl mt-4">
           Create And
@@ -26,7 +34,7 @@ const Hero = () => {
           <Socials 
           iconStyles='hover:text-primary cursor-pointer transition-all'
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   )

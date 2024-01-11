@@ -27,6 +27,7 @@ const links = [
 const services = [
     {
         img: images.CombAndScissors,
+        delay: 0.2,
         title: 'Scissor Cut & Style',
         desc: `You will experience precison cutting and styling at its
         finest from our top stylists
@@ -34,6 +35,7 @@ const services = [
     },
     {
         img: images.HairDryer,
+        delay: 0.3,
         title: 'Hair Wash With Model',
         desc: `This service is for the guys
         who like to keep it sharp at all
@@ -42,6 +44,7 @@ const services = [
     },
     {
         img: images.Blade,
+        delay: 0.4,
         title: 'Hot Towel Cut Throat Shave',
         desc: `Our shaves start with a
         consultation and skin analysis

@@ -1,11 +1,24 @@
 import { images } from "../utils"
+import { motion } from "framer-motion"
+import { fadeIn } from "../utils/variants"
+
 
 const Testimonial = () => {
   return (
-   <section className="bg-testimonial bg-cover bg-no-repeat my-24 py-24 ">
+   <motion.section 
+   variants={fadeIn('up', 0.2)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: false, amount: 0.1}}
+   className="bg-testimonial bg-cover bg-no-repeat my-24 py-24 ">
     <div className="container mx-auto">
       {/* text */}
-      <div className="flex items-center justify-center flex-col text-center">
+      <motion.div 
+      variants={fadeIn('down', 0.2)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{once: false, amount: 0.1}}
+      className="flex items-center justify-center flex-col text-center">
         {/* quote */}
         <div>
           <img src={images.Quote} alt="quote" />
@@ -17,9 +30,9 @@ const Testimonial = () => {
         <p className="text-md text-white mt-6">
         - Jack Hamilton -
         </p>
-      </div>
+      </motion.div>
     </div>
-   </section>
+   </motion.section>
   )
 }
 
