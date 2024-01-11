@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/phlox_barber/static/css/main.b74efae4.css",
+    "main.js": "/phlox_barber/static/js/main.ec4df0b4.js",
+    "static/js/787.3a644e2e.chunk.js": "/phlox_barber/static/js/787.3a644e2e.chunk.js",
+    "static/media/bg.png": "/phlox_barber/static/media/bg.5c057c91cc1ef05e6adc.png",
+    "static/media/img.png": "/phlox_barber/static/media/img.cc84adb46b7993d9d5f1.png",
+    "static/media/img6.jpg": "/phlox_barber/static/media/img6.46333458a595c748e36c.jpg",
+    "static/media/img2.jpg": "/phlox_barber/static/media/img2.a2ec25fe73e9344fb2cf.jpg",
+    "static/media/quote.png": "/phlox_barber/static/media/quote.f2e1cb5fa6fd74c222df.png",
+    "static/media/img4.jpg": "/phlox_barber/static/media/img4.1cf5bed0e436ec0df51e.jpg",
+    "static/media/img5.jpg": "/phlox_barber/static/media/img5.5728638781df31e679f2.jpg",
+    "static/media/img3.jpg": "/phlox_barber/static/media/img3.77f7ff7b3ef9bb54ad4a.jpg",
+    "static/media/img1.jpg": "/phlox_barber/static/media/img1.7eb35b69e0f1ebbb0662.jpg",
+    "static/media/logo.png": "/phlox_barber/static/media/logo.21596de58dff41cedb6c.png",
+    "static/media/noun_hairdresser_1530755.svg.svg": "/phlox_barber/static/media/noun_hairdresser_1530755.svg.fcb432f98c7a0e07f208d7c1f078fff9.svg",
+    "static/media/noun_barber-chair_1634553.svg.svg": "/phlox_barber/static/media/noun_barber-chair_1634553.svg.55c7ce21729fab4505cd15e6c2a72926.svg",
+    "index.html": "/phlox_barber/index.html",
+    "static/media/Section.svg": "/phlox_barber/static/media/Section.a4d60253b8afbbaba976fe1952840509.svg",
+    "main.b74efae4.css.map": "/phlox_barber/static/css/main.b74efae4.css.map",
+    "main.ec4df0b4.js.map": "/phlox_barber/static/js/main.ec4df0b4.js.map",
+    "787.3a644e2e.chunk.js.map": "/phlox_barber/static/js/787.3a644e2e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b74efae4.css",
+    "static/js/main.ec4df0b4.js"
+  ]
+}
